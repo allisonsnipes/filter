@@ -1,5 +1,11 @@
 function shortWords(array) {
-  //why do we do two functions? return  array.wordlength < 5;
+  //why do we do two functions? return array.wordlength < 5;
+  //is it because word is an argument and we need instructions to actually do the action we need?
+  return array.filter(function(word) {
+    //why is this an anynomous function... would we be wrong to type out the full declaration?
+    //do we need to declar a function as a string
+    return word.length < 5;
+  });
 }
 
 /* From here down, you are not expected to 
